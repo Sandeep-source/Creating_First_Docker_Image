@@ -28,5 +28,34 @@
    
 ## What is Dockerfile 🤔
 
-  Dockerfile specifies the step 🚶‍♂️ to take to create ⚒ a image according to your need.  
-  
+  Docker reads instructions from Dockerfile to create an image. Basically Dockerfile specifies the step 🚶‍♂️ to take to create ⚒ a image according to your need.
+  if you need more than one 1️⃣ file 📄 for distict cases then use format `<word_of_choice>.Dockerfile`.
+ 
+## Dockerfile basic structure
+ 
+ ```Dockerfile
+ FROM <base_image>
+ ADD <src> <dest>
+ COPY <src> <dest>
+ EXPOSE <port>
+ ENTRYPOINT <cmd>
+ CMD <cmd>
+ ```
+ 
+ Let's take a look 👀 at these commands
+ 1. `FROM` - It specifies the base image to be used. It forms base for our image. Our customization 🔧 will be placed on the top of this image. Base image can one the images available on dockerhub 🐳 which is bestfit for your usecase.
+ 2. `ADD` - It copies files from source in host system 💻 to the destination of image to be created.
+ 3. `COPY` - It also copies files from source in host system 💻 to the destination of image to be created.
+ 4. `EXPOSE` - This instruction is used to tell docker 🐳 to open a port inside container running this image.
+ 4. `ENTRYPOINT` - This specify command to be run ⚙, when image is used to run ⚙ a container.
+ 5. `CMD` - This is also specifies command to run every time container run ⚙. `CMD` can be overriden when running image.
+ 
+   ```
+   Note: Final command to be run determined by ENTRYPOINT + CMD
+   ```
+ All of the mentioned instructions for the Dockerfile is not mendatory. The use of these depends on the use cases. For references to available command visit [Here](https://docs.docker.com/engine/reference/builder/)
+ 
+## Build image
+    
+   
+ 
