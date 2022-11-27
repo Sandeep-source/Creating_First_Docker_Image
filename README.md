@@ -14,7 +14,7 @@
   
 ## How to create one
 
-  For creating images docker 🐳 provides `docker build` command. The syntax of docker 🐳 command as following
+ For creating images docker 🐳 provides `docker build` command. The syntax of docker 🐳 command as following
   
   ```
   docker build -t image_name dir_name
@@ -126,7 +126,7 @@
 
 ## Quick tools
  
- 1. If you don't have docker 🐳 installed ⚙ or don't want to do, then try it from ![Here](https://labs.play-with-docker.com/). Just login with dockerhub credentials and you are good to go.
+ 1. If you don't have docker 🐳 installed ⚙ or don't want to do, then try it from [Here](https://labs.play-with-docker.com/). Just login with dockerhub credentials and you are good to go.
  2. Try outout `Hack The Number` game from here 👉 [Hack The Number](src/index.html).
  3. Got stuck at syntax errors? Try some Dockerfile validator like [FROM latest](https://www.fromlatest.io/)
      
